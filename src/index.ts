@@ -8,7 +8,7 @@ const app = new Hono()
 
 app.use('*', (c, next) => {
   const env = c.env as Env
-  return cors({ origin: env.CORS_ORIGIN, credentials: true })(c, next)
+  return cors({ origin: env.CORS_ORIGIN ?? '*', credentials: true })(c, next)
 })
 app.use('*', initAuthConfig(authConfig))
 app.use('/api/auth/*', authHandler())
