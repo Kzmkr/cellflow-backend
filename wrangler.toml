@@ -10,4 +10,4 @@ database_id = "9cf58daf-93aa-4fb6-829e-9fc5c9d40e80"
 migrations_dir = "migrations"
 
 [vars]
-AUTH_URL = "http://localhost:8787/api/auth"
+AUTH_URL = "https://cellflow-backend.kozma-kristof14.workers.dev/api/auth"
